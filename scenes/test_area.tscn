@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxpsr12lwt256"]
+
+[ext_resource type="PackedScene" uid="uid://cywusrybre1id" path="res://scenes/test_creature.tscn" id="1_fhiux"]
+[ext_resource type="Script" path="res://scenes/MainCamera.gd" id="2_0ciqe"]
+
+[node name="TestArea" type="Node2D"]
+
+[node name="TestCreature" parent="." instance=ExtResource("1_fhiux")]
+
+[node name="MainCamera" type="Camera2D" parent="."]
+script = ExtResource("2_0ciqe")
