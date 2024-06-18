@@ -1,11 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cywusrybre1id"]
+[gd_scene load_steps=4 format=3 uid="uid://cywusrybre1id"]
 
 [ext_resource type="Texture2D" uid="uid://22ou4tfpa1fe" path="res://icon.svg" id="1_dntsr"]
+[ext_resource type="Script" path="res://scenes/test_creature.gd" id="1_kcauk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_brtwo"]
+size = Vector2(128, 128)
 
 [node name="TestCreature" type="CharacterBody2D"]
 motion_mode = 1
+script = ExtResource("1_kcauk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_brtwo")
