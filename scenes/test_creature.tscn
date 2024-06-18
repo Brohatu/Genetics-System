@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cywusrybre1id"]
+
+[ext_resource type="Texture2D" uid="uid://22ou4tfpa1fe" path="res://icon.svg" id="1_dntsr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_brtwo"]
+
+[node name="TestCreature" type="CharacterBody2D"]
+motion_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_brtwo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dntsr")
